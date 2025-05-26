@@ -9,7 +9,7 @@ function PrimaryButton({ children }) {
       <Pressable
         style={({ pressed }) =>
           pressed
-            ? [styles.buttonInnerContainer, styles.pressed] //styles.pressed] to suppport IOS
+            ? [styles.buttonInnerContainer, styles.pressed] //press to suppport IOS
             : styles.buttonInnerContainer
         }
         onPress={pressHandler}
