@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet } from "react-native";
+import { ImageBackground, StyleSheet, SafeAreaView } from "react-native";
 
 import { LinearGradient } from "expo-linear-gradient"; // Need to intsll -> expo install expo-linear-gradient
 
@@ -26,7 +26,7 @@ export default function App() {
         style={styles.rootSCreen}
         imageStyle={styles.backgroundImage}
       >
-        {screen}
+        <SafeAreaView style={styles.rootSCreen}>{screen}</SafeAreaView>
       </ImageBackground>
     </LinearGradient>
   );
